@@ -1,0 +1,27 @@
+package accesssmodifier;
+
+public class PersonExAccess {
+    private String name; // private = restricted access
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    // Setter
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public static void main(String[] args) {
+        // Create an instance of the PersonExAccess class
+        PersonExAccess person = new PersonExAccess();
+
+        // Set the name using the setter
+        person.setName("John Doe");
+
+        // Get the name using the getter and print it
+        System.out.println("Name: " + person.getName());
+    }
+}
+//In this single file, both the PersonExAccess class and the Main class are defined within the same package, accesssmodifier. When you compile and run this single file, it will work as expected.
